@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Tradición y Sabor</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+	html,
+	body{
+		--primary-color:#EEF8FF;
+		--segundary-color:#3A3A3A;
+		--third-color:#37717F;
+		--fourth-color:#CBDBDB;
+
+		background-color: var(--primary-color);
+		color: var(--segundary-color);
+		margin: 0;
+	}
+
+</style>
