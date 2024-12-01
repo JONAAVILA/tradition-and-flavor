@@ -1,14 +1,28 @@
 ---
+import Networks from "./Networks.astro";
+
 
 ---
 <main>
 	<header>
 		<h1>TRADICION Y SABOR</h1>
 	</header>
+	<div class="box_aside" >
+		<Networks/>
+	</div>
 </main>
 
 <style>
+	main{
+		display: flex;
+		justify-content: space-between;
+	}
 	header{
-		background-color:var(--third-color);
+		height: 300px;
+		width: 100%;
+		background-color:var(--green-color);
+	}
+	.box_aside{
+		background-color: var(--grey-color);
 	}
 </style>
