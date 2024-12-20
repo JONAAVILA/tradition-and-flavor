@@ -1,0 +1,74 @@
+.landing_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 1200px;
+    padding: 20px;
+}
+.landing_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    border-radius: 10px;
+}
+.heading{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-right: 40px;
+}
+.arrow{
+    color: var(--grey-color);
+    stroke-width: 5px;
+}
+.image_circle{
+    margin-top: 35px;
+    width: 120px;
+    border: solid 5px var(--ligth-green-color);
+    border-radius: 50%;
+}
+.image_mini_circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.image_rectangular{
+    width: 180px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 80px;
+}
+.sub_heading{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    margin-top: 20px;
+    h2{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+.box_images_sub_heading{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.separator{
+    height: 2px;
+    width: 100%;
+    background-color: var(--ligth-green-color);
+}
+.sub_heading_rituals{
+    border-radius: 50px;
+    padding-inline: 15px;
+    color: var(--white-color);
+    background-color: var(--green-color);
+}
