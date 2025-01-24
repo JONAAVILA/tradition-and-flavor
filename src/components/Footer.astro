@@ -1,0 +1,40 @@
+---
+const year = new Date().getFullYear()
+---
+
+<section>
+    <footer>
+        {`MINDCARE © ${year} todos los derechos reservados - `}
+        Powared by
+        <a
+            href="https://www.google.com/search?q=Jonatan+Avila+Desarrollador+Web+Full+Stack+-+Dise%C3%B1ador+Web&stick=H4sIAAAAAAAA_-NgU1I1qLA0TTQ2SktOSjFPNktLNDG3MqhISTE1NzA3tDA1MzdMszRIXcRq7ZWfl1iSmKfgWJaZk6jgklqcWFSUn5OTmJJfpBCemqTgVpqToxBckpicraCr4JJZnHp4I0wOALOQqlZnAAAA&hl=es-419&mat=CVgOLeHDGpajElcBqiIDwok-81A3Pgs2HElC9HnkHGX6cpnTXztf-7pFwxPEverY-Wn4IteS9nLzjpLqfxHLJklKP_6GlrD1jh6tSfupQ7bqxd2RBDxtQgsXorpf-mFcyUs&authuser=0"
+            rel="noreferrer"
+            target="_blank"
+        >
+            Jonatan Avila Diseño y Desarrollo Web
+        </a>
+    </footer>
+</section>
+
+<style>
+    section{
+        border-top: solid 1px;
+        padding-block: 10px;
+        width: 100%;
+        background-color: var(--primary-color);
+    }
+    footer{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+        font-size: 10px;
+        gap: 3px;
+	}
+
+    @media
+        (width < 700px){
+            footer{
+                flex-direction: column;
+            }
+        }
+</style>
