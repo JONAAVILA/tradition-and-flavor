@@ -13,6 +13,17 @@
     justify-content: left;
     border-radius: 10px;
 }
+.box_images_top{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    width: 900px;
+}
+.circle_top{
+    margin-bottom: -40px;
+    margin-right: 40px;
+}
 .heading{
     display: flex;
     justify-content: left;
@@ -25,29 +36,35 @@
     color: var(--grey-color);
     stroke-width: 5px;
 }
+.image_mini_circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
 .image_circle{
     margin-top: 35px;
     width: 120px;
     border: solid 5px var(--ligth-green-color);
     border-radius: 50%;
 }
-.image_mini_circle{
-    width: 60px;
-    height: 60px;
+.image_mid_circle{
+    width: 100px;
+    border: solid 5px var(--ligth-green-color);
     border-radius: 50%;
 }
 .image_rectangular{
     width: 180px;
-    height: 55px;
+    height: 60px;
     object-fit: cover;
     border-radius: 80px;
 }
 .sub_heading{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: right;
     width: 100%;
     margin-top: 20px;
+    gap: 25px;
     h2{
         display: flex;
         align-items: flex-start;
@@ -71,4 +88,20 @@
     padding-inline: 15px;
     color: var(--white-color);
     background-color: var(--green-color);
+}
+.sub_heading_rituals_container{
+    display: grid;
+    gap: 15px;
+}
+.sub_heading_rituals_images{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 15px;
+}
+.rituals_image_rectangular{
+    width: 60px;
+    height: 180px;
+    border-radius: 50px;
+    object-fit: cover;
 }
