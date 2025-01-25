@@ -51,12 +51,6 @@
     border: solid 5px var(--ligth-green-color);
     border-radius: 50%;
 }
-.image_rectangular{
-    width: 180px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 80px;
-}
 .sub_heading{
     display: flex;
     align-items: flex-start;

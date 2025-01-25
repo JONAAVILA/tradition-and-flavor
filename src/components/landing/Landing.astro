@@ -1,10 +1,14 @@
 ---
+import ButtonRectangular from '../buttons/ButtonRectangular.astro'
 import './landing.css'
+import imageAccesories from '../../../public/images/Tradicion y Sabor Envios a Domicilio en toda Zona Sur.webp';
 ---
 <main class="landing_main" >
 	<header class="landing_header" >
 		<div class="box_images_top" >
-			<img class="image_rectangular" src="images/Tradicion y Sabor - Accesorios para el Mate en Quilmes.webp" alt="">
+			<ButtonRectangular image={imageAccesories} >
+				ACCESORIOS
+			</ButtonRectangular>
 			<img class="image_mid_circle circle_top" src="images/Tradicion y Sabor Envios a Domicilio en toda Zona Sur.webp" alt="">
 		</div>
 		<div class="heading" >

@@ -1,0 +1,61 @@
+---
+import Arrow from "../icons/Arrow.astro";
+---
+
+<div class="button_rectangular_container" >
+    <div class="button_rectagular_box" >
+        <a href="">
+            <slot/>
+            <div class="arrow_box" >
+                <Arrow background="green" />
+            </div>
+        </a>
+    </div>
+</div>
+
+<style>
+    a{
+        font-family:'Poppins-LightItalic',sans-serif ;
+        font-size: 18px;
+        color: var(--white-color);
+    }
+    .button_rectangular_container{
+        color: var(--white-color);
+        position: relative;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 180px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 80px;
+        background-image: url('images/Tradicion y Sabor - Accesorios para el Mate en Quilmes.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .button_rectangular_container::after{
+        z-index: 1;
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 50%;
+        border-radius: 50px;
+        transform: translate(-50%,-50%);
+        background-color: var(--ligth-grey-color);
+    }
+    .button_rectagular_box{
+        z-index: 10;
+        position: relative;
+        display: grid;
+        align-items: center;
+        justify-content: center
+    }
+    .arrow_box{
+        position: absolute;
+        top: -40px;
+        right: -50px;
+    }
+</style>
