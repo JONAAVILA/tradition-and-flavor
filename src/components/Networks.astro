@@ -1,18 +1,30 @@
 ---
+import InstagramButton from "./buttons/InstagramButton.astro";
+import MetaButton from "./buttons/MetaButton.astro";
+import WhatsappButton from "./buttons/WhatsappButton.astro";
+
 ---
 
-<aside>
-
-</aside>
+<section>
+    <InstagramButton/>
+    <MetaButton/>
+    <WhatsappButton/>
+    <p>SEGUINOS EN NUESTRAS REDES</p>
+</section>
 
 <style>
-    aside{
-        width: 70px;
-        height: 800px;
-        min-height: 500px;
-        max-height: 80vh;
-        margin-top: 70px;
-        border-radius: 40px;
-        background-color: var(--ligth-green-color);
+    section{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 10px;
+        top: 85%;
+        left: 50%;
+        width: 1150px;
+        transform: translateX(-50%);
+    }
+    p{
+        font-size: 10px;
     }
 </style>
