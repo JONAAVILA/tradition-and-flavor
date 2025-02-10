@@ -1,7 +1,8 @@
 ---
 import ButtonRectangular from '../buttons/ButtonRectangular.astro'
-import './landing.css'
 import imageAccesories from '../../../public/images/Tradicion y Sabor Envios a Domicilio en toda Zona Sur.webp';
+import imageJam from '../../../public/images/mermeladas-artesanales-en-Quilmes.webp';
+import './landing.css'
 ---
 <main class="landing_main" >
 	<header class="landing_header" >
@@ -31,9 +32,9 @@ import imageAccesories from '../../../public/images/Tradicion y Sabor Envios a D
 				<div class="box_sub_heading" >
 					QUE PERDURAN EN EL TIEMPO
 					<div class="box_images_sub_heading" >
-						<div>
-							<img class="image_rectangular" src="images/mermeladas-artesanales-en-Quilmes.webp" alt="mermeladas artesanales en Quilmes">
-						</div>
+						<ButtonRectangular image={imageJam} >
+							MERMELADAS
+						</ButtonRectangular>
 						<div>
 							<img class="image_circle" src="images/todo-para-el-mate-en-Quilmes.webp" alt="todo para el mate en Quilmes">
 						</div>
