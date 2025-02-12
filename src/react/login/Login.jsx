@@ -1,14 +1,14 @@
 import { useFormik } from 'formik'
-import './login.css'
-import ButtonReact from '../buttons/buttonReact/ButtonReact'
+import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { validateLogin } from '../../../utils/validate'
+import ButtonReact from '../buttons/buttonReact/ButtonReact'
 import setStorage from '../../../utils/setStorage'
 import sendCode from '../../adapters/sendCode'
 import adminLogin from '../../adapters/adminLogin'
-import { useState } from 'react'
 import ValidateCode from '../modals/validateCode/ValidateCode'
 import Alert from '../modals/alert/Alert'
+import './login.css'
 
 const Login = ()=>{
     const [modal, setModal] = useState(false)
