@@ -9,6 +9,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.16.16"
+    "@astrojs/react": "^4.2.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "astro": "^4.16.16",
+    "axios": "^1.7.9",
+    "formik": "^2.4.6",
+    "ldrs": "^1.0.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.5",
+    "yup": "^1.6.1"
   }
 }
