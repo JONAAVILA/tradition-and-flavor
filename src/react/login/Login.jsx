@@ -1,14 +1,12 @@
 import { useFormik } from 'formik'
 import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import { validateLogin } from '../../../utils/validate'
-import ButtonReact from '../buttons/buttonReact/ButtonReact'
-import setStorage from '../../../utils/setStorage'
 import sendCode from '../../adapters/sendCode'
 import adminLogin from '../../adapters/adminLogin'
-import ValidateCode from '../modals/validateCode/ValidateCode'
 import Alert from '../modals/alert/Alert'
-import './login.css'
+import { Link, useNavigate } from 'react-router-dom'
+import { validateLogin } from '../../utils/validate'
+import ButtonReact from '../buttonReact/ButtonReact'
+import setStorage from '../../utils/setStorage'
 
 const Login = ()=>{
     const [modal, setModal] = useState(false)
@@ -60,11 +58,6 @@ const Login = ()=>{
                             password={formik.values.password}
                             handleModal={handleModal} 
                             email={formik.values.email} 
-                            prod={prod} 
-                            urlCheckCodeProd={urlCheckCodeProd} 
-                            urlCheckCodeDev={urlCheckCodeDev}
-                            urlRefreshProd={urlRefreshProd}
-                            urlRefreshDev={urlRefreshDev}
                         />}
             {alert && <Alert handleAlert={handleAlert} >{alert}</Alert>}
             <div>

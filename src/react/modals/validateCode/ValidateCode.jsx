@@ -1,6 +1,5 @@
 import { useFormik } from "formik"
 import { useState } from "react"
-import { useNavigate } from "react-router-dom"
 import { validateCode } from '../../../../utils/validate'
 import setStorage from '../../../../utils/setStorage'
 import confirmCode from '../../../adapters/confirmCode'
@@ -13,11 +12,6 @@ const ValidateCode = ({
     password,
     email,
     handleModal,
-    prod,
-    urlCheckCodeProd,
-    urlCheckCodeDev,
-    urlRefreshProd,
-    urlRefreshDev
 })=>{
     const [error, setError] = useState('')
     const [loader, setloader] = useState(false)
